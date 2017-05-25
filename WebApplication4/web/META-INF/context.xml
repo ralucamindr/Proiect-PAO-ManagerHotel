@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/WebApplication4"/>
+<Context>
+	<!-- Specify a JDBC datasource -->
+	<Resource name="jdbc/testdb" auth="Container"
+		type="javax.sql.DataSource" username="system" password="bd12345"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@188.25.37.26:1521:XE"
+		maxActive="10" maxIdle="4" />
+
+</Context>
