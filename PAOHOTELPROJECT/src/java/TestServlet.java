@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -22,10 +20,17 @@ public class TestServlet extends HttpServlet {
 	private DataSource dataSource;
 	private Connection connection;
 	private Statement statement;
+        
+        public TestServlet()
+        {
+            System.out.println("a");
+        }
 	
+        @Override
 	public void init() throws ServletException {
 		try {
 			// Get DataSource
+                        System.out.println("AAAAIIIICCCCIII    INIT");
 			Context initContext  = new InitialContext();
 			Context envContext  = (Context)initContext.lookup("java:/comp/env");
 			dataSource = (DataSource)envContext.lookup("jdbc/testdb");
@@ -36,9 +41,11 @@ public class TestServlet extends HttpServlet {
 		}
 	}
 
+        @Override
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		
+                        System.out.println("AAAAIIIICCCCIII   DOGET");
 		ResultSet resultSet = null;
 		try {
 			// Get Connection and Statement
