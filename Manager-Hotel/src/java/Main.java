@@ -23,8 +23,6 @@ public class Main {
    static final String USER = "system";
    static final String PASS = "bd12345";
    
-@Resource(name = "jdbc/myDb")   
-private static DataSource dbRes;
        
    public static void main(String args[]) throws ClassNotFoundException, SQLException
    {
