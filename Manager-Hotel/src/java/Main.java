@@ -30,8 +30,8 @@ private static DataSource dbRes;
    {
         //Class.forName("oracle.jdbc.driver.OracleDriver");
 	   System.out.println("Connecting to database...");
-	   //Connection conn = DriverManager.getConnection(DB_URL,USER,PASS);
-           Connection conn = dbRes.getConnection();
+	   Connection conn = DriverManager.getConnection(DB_URL,USER,PASS);
+           //Connection conn = dbRes.getConnection();
            System.out.println("Connecteed!");
 	   Statement stmt = conn.createStatement();
 	   //String sql = "Select count(*) from useri where username='"+username+"' and password='"+password+"' ";
