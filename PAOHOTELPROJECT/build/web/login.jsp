@@ -17,10 +17,12 @@
             
             <form action="Login" method="post">
                 Username: <input type="text" name="username" /> <br>
-                Password: <input type="text" name="password" /> <br>
+                Password: <input type="password" name="password" /> <br>
                
-                <input type="radio" value="Manager"/> Manager <br>
-                <input type="submit" value="Login" />
+                <input type="radio" name="mod" value="Manager"/> Manager <br>
+                <input type="radio" name="mod" value="Receptioner"/> Receptioner <br>
+                <input type="radio" name="mod" value="Serviciu"/> Serviciu <br>
+                <input type="submit" value="Login"  />
             </form>
         </div>
     </body>

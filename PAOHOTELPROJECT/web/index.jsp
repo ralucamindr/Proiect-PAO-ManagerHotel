@@ -16,7 +16,7 @@
         
               
         <input type="button" value="Login" onclick="window.location='login.jsp'">
-         <input type="button" value="Client" onclick="window.location='client.jsp'" >
+         <input type="button" value="Client" onclick="window.location='TestServlet'" >
      
     </body>
 </html>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Context path="/WebApplication4">
-  <!-- Specify a JDBC datasource -->
-  <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxActive="10" maxIdle="4" name="jdbc/testdb" password="bd12345" type="javax.sql.DataSource" url="jdbc:oracle:thin:@188.25.37.26:1521:XE" username="system"/>
-</Context>

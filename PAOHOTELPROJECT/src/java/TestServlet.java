@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -17,62 +18,20 @@ import javax.sql.DataSource;
 
 public class TestServlet extends HttpServlet {
 	
-	private DataSource dataSource;
-	private Connection connection;
-	private Statement statement;
-        
-        public TestServlet()
-        {
-            System.out.println("a");
-        }
-	
-        @Override
-	public void init() throws ServletException {
-		try {
-			// Get DataSource
-                        System.out.println("AAAAIIIICCCCIII    INIT");
-			Context initContext  = new InitialContext();
-			Context envContext  = (Context)initContext.lookup("java:/comp/env");
-			dataSource = (DataSource)envContext.lookup("jdbc/testdb");
-
-			
-		} catch (NamingException e) {
-			e.printStackTrace();
-		}
-	}
-
-        @Override
-	public void doGet(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
-		
-                        System.out.println("AAAAIIIICCCCIII   DOGET");
-		ResultSet resultSet = null;
-		try {
-			// Get Connection and Statement
-			connection = dataSource.getConnection();
-			statement = connection.createStatement();
-         
-                       
-			String query = "SELECT * FROM camere";
-			resultSet = statement.executeQuery(query);
-			while (resultSet.next()) {
-				System.out.println(resultSet.getString(1) + resultSet.getString(2) + resultSet.getString(3));
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}finally {
-			try { if(null!=resultSet)resultSet.close();} catch (SQLException e) 
-			{e.printStackTrace();}
-			try { if(null!=statement)statement.close();} catch (SQLException e) 
-			{e.printStackTrace();}
-			try { if(null!=connection)connection.close();} catch (SQLException e) 
-			{e.printStackTrace();}
-		}
-                
-                  HttpSession session = req.getSession(true);
-                         session.setAttribute("connection",connection);
-              
-                           RequestDispatcher view = req.getRequestDispatcher("client.jsp");
-                            view.forward(req, resp);
-	}
+	@Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+    
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+    
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    {
+    
+    }
 }
