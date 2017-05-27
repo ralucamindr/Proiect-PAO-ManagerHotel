@@ -6,6 +6,7 @@
 package bazadedate;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -34,13 +35,43 @@ public class BazaDeDate
         {
         Context initCtx = new InitialContext();
         Context envCtx = (Context) initCtx.lookup("java:comp/env");
-        dbRes = (DataSource) envCtx.lookup("jdbc/sys");
+        dbRes = (DataSource) envCtx.lookup("jdbc/paohotel");
         }
         catch (NamingException ex)
         {
             ex.printStackTrace();
         }
     }
+    
+    public static void cauta_camere_pret(String optiune,String tip) throws ClassNotFoundException, SQLException{
+        
+        Connection conn = dbRes.getConnection();
+        PreparedStatement ps=null;
+        if(optiune!=null){
+        if(optiune.compareTo("descrescator")==0)
+                ps = conn.prepareStatement("Select nr_camera,tip,pret from camere order pret desc");
+        else  if(optiune.compareTo("crescator")==0) 
+                ps = conn.prepareStatement("Select nr_camera,tip,pret from camere order pret ");
+        }
+         ResultSet rs = ps.executeQuery();
+            while(rs.next())
+              System.out.println("Numar camera: "+rs.getInt("nr_camera")+" Tip: "+rs.getString("tip")+" Pret: "+rs.getDouble("pret"));
+              
+             rs.close();
+             ps.close();
+             conn.close();
+            
+        
+       
+    }
+    
+    
+    
+    
+    
+   
+	
+    
         
         
         

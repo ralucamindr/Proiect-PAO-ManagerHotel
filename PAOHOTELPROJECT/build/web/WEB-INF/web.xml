@@ -7,6 +7,12 @@
          version="3.0"> 
     
  
+    
+    <context-param>    
+<param-name>ProductName</param-name>
+<param-value>Servlet Context product name</param-value>
+ </context-param>
+    
     <servlet>
         <servlet-name>TestServlet</servlet-name>
         <servlet-class>TestServlet</servlet-class>

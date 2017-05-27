@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Context path="/PAOHOTEL">
-<Resource name="jdbc/sys"
+<Context path="/PAOHOTELPROJECT">
+<Resource name="jdbc/paohotel"
 auth="Container"
 type="javax.sql.DataSource"
 username="root"
-password=""
+password="admin"
 driverClassName="com.mysql.jdbc.Driver"
-url="jdbc:mysql://188.27.67.179:3306/sys?useSSL=false"/>
+url="jdbc:mysql://localhost:3306/paohotel?useSSL=false"/>
 </Context>
