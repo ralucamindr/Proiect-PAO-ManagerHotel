@@ -3,14 +3,24 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Raluca%20Mindrut/Documents/GitHub/Proiect-PAO-ManagerHotel/PAOHOTELPROJECT/web/META-INF/context.xml</file>
-            <file>file:/C:/Users/Raluca%20Mindrut/Documents/GitHub/Proiect-PAO-ManagerHotel/PAOHOTELPROJECT/web/index.jsp</file>
-            <file>file:/C:/Users/Raluca%20Mindrut/Documents/GitHub/Proiect-PAO-ManagerHotel/PAOHOTELPROJECT/web/receptioner.jsp</file>
-            <file>file:/C:/Users/Raluca%20Mindrut/Documents/GitHub/Proiect-PAO-ManagerHotel/PAOHOTELPROJECT/web/login.jsp</file>
-            <file>file:/C:/Users/Raluca%20Mindrut/Documents/GitHub/Proiect-PAO-ManagerHotel/PAOHOTELPROJECT/src/java/TestServlet.java</file>
-            <file>file:/C:/Users/Raluca%20Mindrut/Documents/GitHub/Proiect-PAO-ManagerHotel/PAOHOTELPROJECT/src/java/Login.java</file>
-            <file>file:/C:/Users/Raluca%20Mindrut/Documents/GitHub/Proiect-PAO-ManagerHotel/PAOHOTELPROJECT/src/java/bazadedate/BazaDeDate.java</file>
-            <file>file:/C:/Users/Raluca%20Mindrut/Documents/GitHub/Proiect-PAO-ManagerHotel/PAOHOTELPROJECT/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/manager.css</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/manager.jpg</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/login.jpg</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/src/java/Servleti/Receptioner.java</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/manager.jsp</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/Client.css</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/serviciu.jsp</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/src/java/Servleti/Client.java</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/src/java/Servleti/Serviciu.java</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/src/java/bazadedate/BazaDeDate.java</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/src/java/Servleti/Manager1.java</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/index.css</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/receptioner.jsp</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/client.jsp</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/src/java/Servleti/Manager.java</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/login.jsp</file>
+            <file>file:/C:/Users/Raluca%20Mindrut/Desktop/PROIECTUL%20VIETII/PAOHOTELPROJECT/web/index.jsp</file>
         </group>
     </open-files>
 </project-private>

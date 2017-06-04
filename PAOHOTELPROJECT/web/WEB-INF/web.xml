@@ -1,36 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://java.sun.com/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
-         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd
-         http://java.sun.com/xml/ns/javaee "
-         version="3.0"> 
-    
- 
-    
-    <context-param>    
-<param-name>ProductName</param-name>
-<param-value>Servlet Context product name</param-value>
- </context-param>
-    
-    <servlet>
-        <servlet-name>TestServlet</servlet-name>
-        <servlet-class>TestServlet</servlet-class>
-    </servlet>
-    
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd          http://java.sun.com/xml/ns/javaee ">
+    <context-param>
+        <param-name>ProductName</param-name>
+        <param-value>Servlet Context product name</param-value>
+    </context-param>
     <servlet>
         <servlet-name>Login</servlet-name>
-        <servlet-class>Login</servlet-class>
+        <servlet-class>Servleti.Login</servlet-class>
     </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>TestServlet</servlet-name>
-        <url-pattern>/TestServlet</url-pattern>
-    </servlet-mapping>
-    
+    <servlet>
+        <servlet-name>Receptioner</servlet-name>
+        <servlet-class>Servleti.Receptioner</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Client</servlet-name>
+        <servlet-class>Servleti.Client</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Manager</servlet-name>
+        <servlet-class>Servleti.Manager</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Manager1</servlet-name>
+        <servlet-class>Servleti.Manager1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Serviciu</servlet-name>
+        <servlet-class>Servleti.Serviciu</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Receptioner</servlet-name>
+        <url-pattern>/Receptioner</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Client</servlet-name>
+        <url-pattern>/Client</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Manager</servlet-name>
+        <url-pattern>/Manager</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Manager1</servlet-name>
+        <url-pattern>/Manager1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Serviciu</servlet-name>
+        <url-pattern>/Serviciu</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

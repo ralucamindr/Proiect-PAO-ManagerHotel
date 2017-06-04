@@ -9,14 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Page</title>
     </head>
-    <body>
+    <body background="Hotel.jpg">
               <h2>WELCOME TO PAO HOTEL! </h2>
         
-              
+              <article>    
         <input type="button" value="Login" onclick="window.location='login.jsp'">
-         <input type="button" value="Client" onclick="window.location='TestServlet'" >
-     
+         <input type="button" value="Client" onclick="window.location='client.jsp'" >
+              </article>
     </body>
 </html>
